@@ -1,0 +1,19 @@
+@media (max-width:991px){
+    .searchSideBar{
+        display: none;
+    }
+    .searchFixedNav{
+        display: block !important;
+    }
+}
+
+.searchFixedNav{
+    display: none;
+}
+
+@media (max-width:767px){
+  .searchResultContainer{
+    width:50% !important
+}  
+}
+

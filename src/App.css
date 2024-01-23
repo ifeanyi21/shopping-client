@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+body .slick-prev::before,
+body .slick-next::before {
+  color: #8eb3d9;
+}
+
+.App {
+  /* background-color: #f1f1f1; */
+  /* background: rgb(241, 241, 241);
+  background: linear-gradient(
+    180deg,
+    rgba(241, 241, 241, 1) 28%,
+    rgba(235, 225, 88, 1) 100%
+  ); */
+}
+
+.badgeColor {
+  background-color: #ebe158 !important;
+}
+
+.smallBrandName {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .smallScreen {
+    margin-right: 26px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand-name {
+    display: none;
+  }
+  .smallBrandName {
+    display: block;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.pagination > li {
+  display: inline-block;
+  padding-left: 0;
+}
+
+.pagination > li {
+  list-style: none;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  color: #2c689c;
+  border-radius: 10px;
+  margin-left: -1px;
+}
+
+.pagination > li.active > a {
+  color: #fff;
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  padding: 0px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  font-weight: bolder;
+  font-size: larger;
+  margin: 0px 20px;
+}
+
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-bottom-right-radius: 4px;
+  margin-right: 0;
+  padding: 0px !important;
+  border-top-right-radius: 4px;
+  font-weight: bolder;
+  font-size: larger;
+  margin: 0px 20px;
+}

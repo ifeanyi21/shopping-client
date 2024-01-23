@@ -1,0 +1,35 @@
+.productLink {
+  transition: transform 1s;
+}
+
+.productLink:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+@media (max-width: 1100px) {
+  .productCard,
+  .wishlistProduct {
+    width: 25% !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .productCard,
+  .wishlistProduct {
+    width: 33% !important;
+  }
+}
+
+@media (max-width: 483px) {
+  .productCard,
+  .wishlistProduct {
+    width: 45% !important;
+  }
+}
+
+@media (min-width: 1101px) {
+  .wishlistProduct {
+    width: 20% !important;
+  }
+}

@@ -1,0 +1,18 @@
+@media (max-width:1100px){
+    .productCard{
+        width:25% !important
+    }
+}
+
+
+@media (max-width:700px){
+    .productCard{
+        width:33% !important
+    }
+}
+
+@media (max-width:483px){
+    .productCard{
+        width:43% !important
+    }
+}
