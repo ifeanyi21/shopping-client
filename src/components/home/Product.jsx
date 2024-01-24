@@ -1,19 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Product = ({name,productId,price,salePrice,salePercent,image,quantity}) => {
+const Product = ({
+  name,
+  productId,
+  price,
+  salePrice,
+  salePercent,
+  image,
+  quantity,
+}) => {
   return (
-    <Link to={`/product/${name}/${productId}`} className="no-underline text-black">
+    <Link
+      to={`/product/${name}/${productId}`}
+      className="no-underline text-black"
+    >
       <div className="text-left relative">
         <img
           src={image[0]}
-          className="w-full object-cover object-top"
+          className="w-full object-cover object-top rounded-md"
           style={{ height: 300 }}
           alt=""
         />
-        <div className={`mt-2 ${quantity===0 ? 'text-gray-400' : ""}`}>
+        <div className={`mt-2 ${quantity === 0 ? "text-gray-400" : ""}`}>
           <h4 className="font-bold text-base mb-1 uppercase">{name}</h4>
-           <div className="text-sm">
+          <div className="text-sm">
             {salePrice ? (
               <div className="relative">
                 <span className="block font-semibold text-base">
@@ -36,7 +47,12 @@ const Product = ({name,productId,price,salePrice,salePercent,image,quantity}) =>
             )}
           </div>
         </div>
-        {quantity === 0 &&<div className="text-red-600 font-bold text-lg absolute top-3 right-3"> Sold out</div>}
+        {quantity === 0 && (
+          <div className="text-red-600 font-bold text-lg absolute top-3 right-3">
+            {" "}
+            Sold out
+          </div>
+        )}
       </div>
     </Link>
   );

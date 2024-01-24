@@ -37,7 +37,7 @@ function Search() {
         value={searchValue}
         required
       />
-      <Button type="submit" variant="outlined">
+      <Button type="submit" variant="contained" color="success">
         <FaSearch />
       </Button>
     </Form>

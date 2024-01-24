@@ -76,7 +76,7 @@ export default function SortDropDown({ marginTop }) {
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
-        color="warning"
+        color="success"
         sx={{
           marginTop,
         }}

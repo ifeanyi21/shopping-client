@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 body {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Raleway", sans-serif !important;
 }
 
 body .slick-prev::before,
 body .slick-next::before {
-  color: #8eb3d9;
+  color: #2e7d32;
 }
 
 .App {
@@ -73,8 +73,8 @@ body .slick-next::before {
 
 .pagination > li.active > a {
   color: #fff;
-  background-color: #1890ff;
-  border-color: #1890ff;
+  background-color: #2e7d32;
+  border-color: #2e7d32;
 }
 
 .pagination > li:first-child > a,

@@ -23,7 +23,7 @@ export default function CategoryDialog() {
 
   return (
     <div>
-      <Button color="warning" onClick={handleClickOpen} sx={{ marginTop: 1 }}>
+      <Button color="success" onClick={handleClickOpen} sx={{ marginTop: 1 }}>
         Category
       </Button>
       <Dialog

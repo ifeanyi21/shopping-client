@@ -9,7 +9,7 @@ import Logo from "../assests/images/logo.png";
 
 function Navigation(props) {
   return (
-    <div className={`bg-white sticky-top shadow-sm mb-8`}>
+    <div className={`bg-white sticky-top mb-8`}>
       <div className="container">
         <Navbar
           expand="md"
@@ -37,7 +37,13 @@ function Navigation(props) {
               placement="start"
             >
               <Nav className="justify-between flex-grow-1 items-center">
+                <Navbar.Brand className="brand-name">
+                  <Link to="/" className="text-black no-underline">
+                    <img src={Logo} alt="Yemzy apparel" className="w-10" />
+                  </Link>
+                </Navbar.Brand>
                 <div className="d-flex navbar-nav items-center">
+                  <DropDown />
                   <div className="nav-link relative mr-1 px-2">
                     <span className="flex items-center">
                       <ShopDropdown />
@@ -48,20 +54,8 @@ function Navigation(props) {
                       <span className="ml-2">Sale</span>
                     </span>
                   </Link>
-                  <Link to="/news" className="nav-link mr-1 px-2">
-                    <span className="flex items-center capitalize font-normal">
-                      <span className="ml-2">News</span>
-                    </span>
-                  </Link>
-                </div>
-                <Navbar.Brand className="brand-name">
-                  <Link to="/" className="text-black no-underline">
-                    <img src={Logo} alt="Yemzy apparel" className="w-10" />
-                  </Link>
-                </Navbar.Brand>
-                <div className="flex items-center">
+
                   <LargeSearch />
-                  <DropDown />
                 </div>
               </Nav>
             </Navbar.Collapse>

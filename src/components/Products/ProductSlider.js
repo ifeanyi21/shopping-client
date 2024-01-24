@@ -1,42 +1,15 @@
 import React from "react";
 import Slider from "react-slick";
 import Product from "../home/Product";
-import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
-
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block" }}
-      onClick={onClick}
-    >
-      <FaChevronCircleRight />
-    </div>
-  );
-}
-
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block" }}
-      onClick={onClick}
-    >
-      <FaChevronCircleLeft />
-    </div>
-  );
-}
 
 const settings = {
-  dots: true,
   infinite: true,
-  speed: 500,
-  slidesToShow: 5,
-  slidesToScroll: 3,
-  nextArrow: <SampleNextArrow />,
-  prevArrow: <SamplePrevArrow />,
+  slidesToShow: 4,
+  slidesToScroll: 2,
+  autoplay: true,
+  speed: 9000,
+  autoplaySpeed: 1000,
+  cssEase: "linear",
   responsive: [
     {
       breakpoint: 600,

@@ -114,8 +114,8 @@ function SearchResult() {
           </div>
           {searchResult.length > 0 && (
             <ReactPaginate
-              previousLabel={<FaChevronLeft color="#000" />}
-              nextLabel={<FaChevronRight color="#000" />}
+              previousLabel={<FaChevronLeft color="#2e7d32" />}
+              nextLabel={<FaChevronRight color="#2e7d32" />}
               pageCount={pageCount}
               onPageChange={changePage}
               containerClassName={"pagination"}

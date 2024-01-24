@@ -69,7 +69,7 @@ export default function ShopDropdown() {
         {categories.map((category, index) => {
           return (
             <Link
-              className={`nav-link mb-3 hover:underline rounded-xl p-2`}
+              className={`nav-link mb-3 hover:!text-green-700 w-full hover:rounded-none rounded-xl p-2`}
               to={`/cat/${index}`}
               key={index}
             >

@@ -5,8 +5,20 @@ import Navigation from "./Navbar";
 import Auth from "../services/context/store";
 import { ACTION_TYPES } from "../services/actions/actions";
 import { useLocation } from "react-router-dom";
+import Slider from "react-slick";
 
 function Layout({ children }) {
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
+
   const [state, dispatch] = useContext(Auth);
   const token = localStorage.getItem("token");
   const location = useLocation();
@@ -38,26 +50,24 @@ function Layout({ children }) {
     <>
       {state.loggedIn ? <LoggedInNavbar /> : <Navigation />}
       {location.pathname === "/" ? (
-        <div className="mb-4">
-          <div className="h-[600px]">
-            <div
-              className="h-[600px] relative"
-              style={{
-                backgroundImage: "url(/images/slide-3.jpg)",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-              <div className="md:block absolute left-[5%] top-[40%]">
-                <div className="text-white mb-8">
-                  <h2 className="text-red-600 md:font-bold md:text-5xl">
-                    OLÓRI The elegant Vibe <br /> collection 2024
-                  </h2>
-                  <h4 className="font-light">Coming Soon....</h4>
-                </div>
+        <div className="mb-4 overflow-hidden">
+          <div>
+            <Slider {...settings}>
+              <div className="w-full h-full">
+                <img
+                  src={require("../assests/images/banner21.jpg")}
+                  className="md:h-[600px] h-[300px] w-full object-cover"
+                  alt="banner"
+                />
               </div>
-            </div>
+              <div className="w-full h-full">
+                <img
+                  src={require("../assests/images/banner22.jpg")}
+                  className="md:h-[600px] h-[300px] w-full object-cover"
+                  alt="banner"
+                />
+              </div>
+            </Slider>
           </div>
         </div>
       ) : (

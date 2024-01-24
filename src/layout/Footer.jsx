@@ -5,7 +5,7 @@ import Logo from "../assests/images/logo.png";
 const Footer = () => {
   const categories = ["Dresses", "Jumpsuits", "Short sets", "Skirt sets"];
   return (
-    <div className="bg-black text-white text-left p-10">
+    <div className="bg-green-800 text-white text-left p-10">
       <div className="container">
         <div className="row">
           <div className="col-lg-3 mb-3">
@@ -16,12 +16,6 @@ const Footer = () => {
               We are a ready to wear brand for women around the world. All
               pieces are made with ❤️ in Lagos, Nigeria.
             </p>
-            <div className="mt-16">
-              <h6 className="uppercase font-semibold text-xl">News</h6>
-              <Link to="/news" className="no-underline text-gray-200 nav-link">
-                News
-              </Link>
-            </div>
           </div>
           <div className="col-lg-3"></div>
           <div className="col-lg-3 mb-3">

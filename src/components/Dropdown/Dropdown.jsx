@@ -22,15 +22,12 @@ export default function DropDown() {
     <div>
       <Button
         id="basic-button"
+        color="success"
+        variant="contained"
         aria-controls={open ? "basic-menu" : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
-        sx={{
-          color: "rgba(0, 0, 0, 0.55)",
-          textTransform: "initial",
-          fontSize: 16,
-        }}
       >
         <FaUserCircle size={20} />
       </Button>
