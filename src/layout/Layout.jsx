@@ -5,20 +5,9 @@ import Navigation from "./Navbar";
 import Auth from "../services/context/store";
 import { ACTION_TYPES } from "../services/actions/actions";
 import { useLocation } from "react-router-dom";
-import Slider from "react-slick";
+import { Carousel } from "react-bootstrap";
 
 function Layout({ children }) {
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
-    cssEase: "linear",
-  };
-
   const [state, dispatch] = useContext(Auth);
   const token = localStorage.getItem("token");
   const location = useLocation();
@@ -51,8 +40,8 @@ function Layout({ children }) {
       {state.loggedIn ? <LoggedInNavbar /> : <Navigation />}
       {location.pathname === "/" ? (
         <div className="mb-4 overflow-hidden">
-          <div>
-            <Slider {...settings}>
+          <Carousel>
+            <Carousel.Item>
               <div className="w-full h-full">
                 <img
                   src={require("../assests/images/banner21.jpg")}
@@ -60,6 +49,8 @@ function Layout({ children }) {
                   alt="banner"
                 />
               </div>
+            </Carousel.Item>
+            <Carousel.Item>
               <div className="w-full h-full">
                 <img
                   src={require("../assests/images/banner22.jpg")}
@@ -67,8 +58,8 @@ function Layout({ children }) {
                   alt="banner"
                 />
               </div>
-            </Slider>
-          </div>
+            </Carousel.Item>
+          </Carousel>
         </div>
       ) : (
         ""

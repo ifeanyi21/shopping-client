@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import { FaInstagram } from "react-icons/fa";
-// import Jumbotron from "../../components/home/Jumbotron";
 import Product from "../../components/home/Product";
 import Title from "../../components/Title/Title";
 import { ProgressUpdate } from "../../components/Table/Table";
