@@ -42,7 +42,7 @@ export default function DropDown() {
         }}
       >
         <Link className="nav-link px-3 py-2" to={`/login?${pathName}`}>
-          <Button variant="contained" onClick={handleClose}>
+          <Button variant="contained" color="success" onClick={handleClose}>
             Sign In
           </Button>
         </Link>

@@ -53,6 +53,15 @@ function Layout({ children }) {
             <Carousel.Item>
               <div className="w-full h-full">
                 <img
+                  src={require("../assests/images/Mock up.jpg")}
+                  className="md:h-[600px] h-[300px] w-full object-cover"
+                  alt="banner"
+                />
+              </div>
+            </Carousel.Item>
+            <Carousel.Item>
+              <div className="w-full h-full">
+                <img
                   src={require("../assests/images/banner22.jpg")}
                   className="md:h-[600px] h-[300px] w-full object-cover"
                   alt="banner"

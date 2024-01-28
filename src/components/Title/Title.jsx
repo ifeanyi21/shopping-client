@@ -3,7 +3,7 @@ import React from "react";
 function Title({ text, content }) {
   return (
     <>
-      <title>{text} | Yemzy Apparel</title>
+      <title>{text} | OgBest</title>
       <meta name="description" content={content} />
     </>
   );

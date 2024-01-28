@@ -10,7 +10,7 @@ import Cart from "../services/context/cart";
 import Auth from "../services/context/store";
 import { FaShoppingBasket } from "react-icons/fa";
 import ShopDropdown from "../components/Dropdown/ShopDropdown";
-import Logo from "../assests/images/logo.png";
+import Logo from "../assests/images/logo.jpg";
 
 function LoggedInNavbar(props) {
   const [user] = useContext(Auth);
@@ -57,7 +57,7 @@ function LoggedInNavbar(props) {
             />
             <Navbar.Brand className="md:hidden flex justify-center mx-auto">
               <Link to="/" className="text-black no-underline">
-                <img src={Logo} alt="Yemzy apparel" className="w-10" />
+                <img src={Logo} alt="OgBest" className="w-10" />
               </Link>
             </Navbar.Brand>
             <Search />
@@ -89,7 +89,7 @@ function LoggedInNavbar(props) {
                 </div>
                 <Navbar.Brand className="brand-name">
                   <Link to="/" className="text-black no-underline">
-                    <img src={Logo} alt="Yemzy apparel" className="w-10" />
+                    <img src={Logo} alt="OgBest" className="w-10" />
                   </Link>
                 </Navbar.Brand>
                 <div className="flex items-center">

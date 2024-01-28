@@ -29,8 +29,8 @@ function ShippingReturns() {
         <div className="mb-8">
           <h5 className="text-base font-extrabold mb-3">RETURN POLICY</h5>
           <p>
-            Item(s) are subject to RETURN/EXCHANGE/REFUND if Yemzy apparel
-            receives the item/s within:
+            Item(s) are subject to RETURN/EXCHANGE/REFUND if OgBest receives the
+            item/s within:
           </p>
           <h6 className="text-sm font-extrabold">TIMELINE:</h6>
 
@@ -132,14 +132,14 @@ function ShippingReturns() {
 
         <div className="mb-8">
           <h5 className="text-base font-extrabold mb-3">RETURN ADDRESS:</h5>
-          <h6 className="text-sm font-extrabold">Yemzy apparel</h6>
+          <h6 className="text-sm font-extrabold">OgBest</h6>
           <p>
             1, Samuel Durojaye Street, Segun Kujore Bus Stop, CMD Road, Magodo
             Ikosi, Lagos
           </p>
           <p>
             For any other information concerning returns or exchange please
-            contact: +234 806 774 9483 or email: info@yemzyapparel.ng
+            contact: +234 806 774 9483 or email: info@ogbest.ng
           </p>
         </div>
       </div>

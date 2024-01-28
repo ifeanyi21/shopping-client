@@ -5,7 +5,7 @@ import Search from "../components/searchBar/smallSearchBar";
 import LargeSearch from "../components/searchBar/largeSearchBar";
 import DropDown from "../components/Dropdown/Dropdown";
 import ShopDropdown from "../components/Dropdown/ShopDropdown";
-import Logo from "../assests/images/logo.png";
+import Logo from "../assests/images/logo.jpg";
 
 function Navigation(props) {
   return (
@@ -24,7 +24,7 @@ function Navigation(props) {
             />
             <Navbar.Brand className="md:hidden flex justify-center mx-auto">
               <Link to="/" className="text-black no-underline">
-                <img src={Logo} alt="Yemzy apparel" className="w-10" />
+                <img src={Logo} alt="OgBest" className="w-16" />
               </Link>
             </Navbar.Brand>
 
@@ -39,7 +39,7 @@ function Navigation(props) {
               <Nav className="justify-between flex-grow-1 items-center">
                 <Navbar.Brand className="brand-name">
                   <Link to="/" className="text-black no-underline">
-                    <img src={Logo} alt="Yemzy apparel" className="w-10" />
+                    <img src={Logo} alt="OgBest" className="w-16" />
                   </Link>
                 </Navbar.Brand>
                 <div className="d-flex navbar-nav items-center">

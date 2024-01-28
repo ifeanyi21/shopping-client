@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assests/images/logo.png";
+import Logo from "../assests/images/footer.png";
 
 const Footer = () => {
   const categories = ["Dresses", "Jumpsuits", "Short sets", "Skirt sets"];
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-3 mb-3">
             <h6 className="uppercase">
-              <img src={Logo} alt="Yemzy apparel" className="w-14" />
+              <img src={Logo} alt="OgBest" className="w-20" />
             </h6>
             <p>
               We are a ready to wear brand for women around the world. All
@@ -57,7 +57,7 @@ const Footer = () => {
               page
             </div>
             <div className="mb-2">Phone: +234 806 774 9483</div>
-            <div className="mb-2">Email: info@yemzyapparel.ng</div>
+            <div className="mb-2">Email: info@ogbest.ng</div>
             <div className="mb-2">Store open: 9:00 – 17:30, Monday –</div>
             <div className="mb-5">Friday, 10:00 – 17:00, Saturday</div>
             <img src="/images/payment.png" alt="Payment Options" />

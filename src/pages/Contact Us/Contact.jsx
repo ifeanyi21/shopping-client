@@ -53,8 +53,7 @@ function Contact() {
         <Divider />
         <div className="mt-8">
           <p>
-            Email:{" "}
-            <a href="mailto:info@yemzyapparel.ng">info@info@yemzyapparel.ng</a>
+            Email: <a href="mailto:info@ogbest.ng">info@info@ogbest.ng</a>
           </p>
           <p>
             Phone Number: <a href="tel:+2348067749483">+234 806 774 9483</a>
