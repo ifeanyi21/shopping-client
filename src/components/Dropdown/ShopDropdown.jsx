@@ -17,8 +17,8 @@ export default function ShopDropdown() {
   const categories = [
     "Suits & Blazers",
     "Sweat shirts & Hoodies",
-    "Pants sets",
-    "Play suits",
+    "Trousers, Pants & Chinos",
+    "Ties",
     "Short sets",
     "Skirt sets",
   ];
