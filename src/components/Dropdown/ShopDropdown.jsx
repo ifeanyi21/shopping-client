@@ -19,8 +19,8 @@ export default function ShopDropdown() {
     "Sweat shirts & Hoodies",
     "Trousers, Pants & Chinos",
     "Ties",
-    "Short sets",
-    "Skirt sets",
+    // "Short sets",
+    // "Skirt sets",
   ];
 
   return (
