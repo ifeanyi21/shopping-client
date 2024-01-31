@@ -10,7 +10,7 @@ import { FaEnvelope } from "react-icons/fa";
 const Home = () => {
   const [loading, setLoading] = useState(true);
   const [products, setProducts] = useState([]);
-  const [skirtSets, setskirtSets] = useState([]);
+  const [category, setCategory] = useState([]);
 
   const fetchProducts = async () => {
     const response = await fetch(
@@ -24,10 +24,10 @@ const Home = () => {
     );
 
     const data = await response.json();
-    const filterSkirtsets = data.data.filter((item) => {
-      return item.Category === 5;
+    const filterCategory = data.data.filter((item) => {
+      return item.Category === 1;
     });
-    setskirtSets(filterSkirtsets);
+    setCategory(filterCategory);
     setProducts(data.data.slice(10, 18));
     setLoading(false);
   };
@@ -84,14 +84,14 @@ const Home = () => {
       <div className="container mt-16">
         <div className="row">
           <h4 className="md:text-3xl font-semibold text-xl text-left uppercase mb-9">
-            Skirts Sets
+            Sweat shirts & Hoodies
           </h4>
           {loading ? (
             <div className="h-14">
               <ProgressUpdate />
             </div>
           ) : (
-            skirtSets.map((product) => {
+            category.map((product) => {
               return (
                 <div className="col-lg-3 mb-10" key={product._id}>
                   <Product

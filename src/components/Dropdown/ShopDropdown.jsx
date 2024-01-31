@@ -15,8 +15,8 @@ export default function ShopDropdown() {
   };
 
   const categories = [
-    "Dresses",
-    "Jumpsuits",
+    "Suits & Blazers",
+    "Sweat shirts & Hoodies",
     "Pants sets",
     "Play suits",
     "Short sets",
