@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import Logo from "../assests/images/footer.png";
 
 const Footer = () => {
-  const categories = ["Dresses", "Jumpsuits", "Short sets", "Skirt sets"];
+  const categories = [
+    "Suits & Blazers",
+    "Sweat shirts & Hoodies",
+    "Trousers, Pants & Chinos",
+    "Ties",
+  ];
   return (
     <div className="bg-green-800 text-white text-left p-10">
       <div className="container">
